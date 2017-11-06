@@ -72,5 +72,7 @@ class TestLibrary < MiniTest::Test
   end
 
   def test_book_details
+    assert_equal({title: "In cold blood", rental_details: {student_name: "Kim", due_date: "04/12/17"}}, @library.find_book("In cold blood"))
+  end
 
 end
